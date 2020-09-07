@@ -66,4 +66,11 @@ export default {
   border: 3px solid grey;
   border-radius: 14px;
 }
+
+@media (max-width: 1000px) {
+  .buttonsWrapper button {
+    margin: 4px 15px;
+    width: 65px;
+  }
+}
 </style>

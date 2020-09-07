@@ -1,6 +1,6 @@
 <template>
   <div class="flexWrapper columnDirection">
-    <div class="flexWrapper columnDirection">
+    <div class="flexWrapper columnDirection height400">
       <div class="flexWrapper columnDirection">
         <div class="sectionTitle">selected people</div>
         <ul class="flexWrapper columnDirection">
@@ -78,6 +78,10 @@ textarea {
   resize: none;
 
   height: 120px;
-  width: 700px;
+  width: 70%;
+}
+
+.height400{
+  min-height: 400px;
 }
 </style>

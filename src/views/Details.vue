@@ -1,6 +1,6 @@
 <template>
   <div v-if="person" class="detailContentWrapper">
-    <div>
+    <div class="imageWrapper">
       <img :src="person.squareImage" />
     </div>
     <div class="detailInfo flexWrapper columnDirection">
@@ -49,11 +49,26 @@ export default {
   text-align: left;
   margin: 10px 0;
 }
+.imageWrapper img {
+  width: 416px;
+}
 
 hr {
   height: 2px;
   border: none;
   color: #333;
   background-color: #333;
+}
+
+@media (max-width: 1000px) {
+  .detailContentWrapper {
+    flex-direction: column;
+  }
+  .imageWrapper img {
+    width: 100%;
+  }
+  .detailInfo {
+    margin-left: 0;
+  }
 }
 </style>

@@ -34,7 +34,6 @@ export default {
   color: #2c3e50;
   min-height: 550px;
   width: 1000px;
-  
 }
 .content {
   padding: 10px;
@@ -49,5 +48,16 @@ export default {
 
 .columnDirection {
   flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  #app {
+    width: 100%;
+  }
+}
+@media (max-height:550px) {
+  #app {
+    min-height: 100%;
+  }
 }
 </style>

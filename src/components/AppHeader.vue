@@ -40,8 +40,9 @@ export default {
   flex: auto;
 }
 .nav {
-  width: 300px;
   display: flex;
+  margin-left: auto;
+  margin-right: 15px;
 }
 .navLink {
   width: 100px;
@@ -54,5 +55,11 @@ export default {
 .withoutLink {
   text-decoration: none;
   color: black;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+  }
 }
 </style>

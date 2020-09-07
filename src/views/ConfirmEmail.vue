@@ -1,6 +1,6 @@
 <template>
   <div class="flexWrapper columnDirection">
-    <div class="flexWrapper columnDirection">
+    <div class="flexWrapper columnDirection height400">
       <div class="flexWrapper columnDirection">
         <div class="sectionTitle">selected people</div>
         <ul class="flexWrapper columnDirection">
@@ -66,7 +66,13 @@ ul {
 }
 .message {
   text-align: left;
-  height: 126px;
-  width: 700px;
+  height: 146px;
+  width: 70%;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  overflow: auto;
+}
+.height400{
+  min-height: 400px;
 }
 </style>
