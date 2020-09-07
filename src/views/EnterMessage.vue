@@ -13,7 +13,8 @@
       <div class="messageWrapper">
         <div class="sectionTitle">Message</div>
         <div>
-          <textarea v-model="message" :attr="{maxlength:messageMaxLength}" />
+          <textarea v-model="message" v-bind:maxlength="messageMaxLength" />
+          <div>{{symbolCountText}}</div>
         </div>
       </div>
     </div>
@@ -54,6 +55,9 @@ export default {
         this.$store.commit("setEmailMessage", newValue);
       },
     },
+    symbolCountText:function(){
+      return `${this.message.length} of ${this.messageMaxLength}`
+    }
   },
 };
 </script>
